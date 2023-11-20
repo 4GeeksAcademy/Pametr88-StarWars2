@@ -20,7 +20,7 @@ export const Card = () => {
                         <p className="card-text">Height: {item.height}</p>
                         <p className="card-text">Hair Color: {item.hair_color}</p>
                         <div>
-                            <Link to={`/character/${id}`} className="btn btn-outline-dark me-3">Learn more!</Link>
+                            <Link to={`/character/${index+1}`} className="btn btn-outline-dark me-3">Learn more!</Link>
                             <Link to="#" className="btn btn-outline-warning"><i className="fa-regular fa-heart" style={{ color: "#ffff00" }}></i></Link>
                         </div>
                     </div>

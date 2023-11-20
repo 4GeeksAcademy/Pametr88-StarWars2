@@ -20,7 +20,7 @@ export const Planet = () => {
                         <p className="card-text">Diameter: {item.diameter}</p>
                         <p className="card-text">Climate: {item.climate}</p>
                         <div>
-                            <Link to="#" className="btn btn-outline-dark me-3">Learn more!</Link>
+                            <Link to={`/planet/${index+1}`} className="btn btn-outline-dark me-3">Learn more!</Link>
                             <Link to="#" className="btn btn-outline-warning"><i className="fa-regular fa-heart" style={{ color: "#ffff00" }}></i></Link>
                         </div>
                     </div>
