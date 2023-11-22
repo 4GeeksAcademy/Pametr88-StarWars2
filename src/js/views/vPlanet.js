@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { DetallePlanet } from "../component/DetallePlanet";
 
 
-export const Demo = () => {
+export const vPlanet = () => {
 	
 	return (
 		<div className="container">

@@ -21,7 +21,9 @@ export const Card = () => {
                         <p className="card-text">Hair Color: {item.hair_color}</p>
                         <div>
                             <Link to={`/character/${index+1}`} className="btn btn-outline-dark me-3">Learn more!</Link>
-                            <Link to="#" className="btn btn-outline-warning"><i className="fa-regular fa-heart" style={{ color: "#ffff00" }}></i></Link>
+                            <button className="btn btn-outline-warning" to="#" ><i className="fa-regular fa-heart" onClick={()=>{
+                                actions.addFavorite(item.name)
+                            }} style={{ color: "#ffff00" }}></i></button>
                         </div>
                     </div>
                 </div>
