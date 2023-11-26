@@ -27,8 +27,11 @@ export const DetalleCard = (props) => {
                     <div className="card-body">
                         <h5 className="card-title">{store.OneCharacter.properties?.name}</h5>
                         <p className="card-text">Gender: {store.OneCharacter.properties?.gender}</p>
+                        <p className="card-text">Mass: {store.OneCharacter.properties?.mass}</p>
                         <p className="card-text">Height: {store.OneCharacter.properties?.height}</p>
+                        <p className="card-text">Skin Color: {store.OneCharacter.properties?.skin_color}</p>
                         <p className="card-text">Hair Color: {store.OneCharacter.properties?.hair_color}</p>
+                        <p className="card-text">Eye Color: {store.OneCharacter.properties?.eye_color}</p>
                     </div>       
                 </div>            
             </div>

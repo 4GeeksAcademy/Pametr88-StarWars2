@@ -17,6 +17,8 @@ export const Species = () => {
                     <div className="card-body">
                         <h5 className="card-title">{item.name}</h5>
                         <p className="card-text">Classification: {item.classification}</p>
+                        <p className="card-text">Designation: {item.designation}</p>
+                        <p className="card-text">Language: {item.language}</p>
                         <div>
                             <Link to={`/specie/${index+1}`} className="btn btn-outline-dark me-3">Learn more!</Link>
                             <button className="btn btn-outline-warning" to="#" ><i className="fa-regular fa-heart" onClick={()=>{

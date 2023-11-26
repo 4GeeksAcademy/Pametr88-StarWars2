@@ -17,6 +17,7 @@ export const Films = () => {
                     <div className="card-body">
                         <h5 className="card-title">{item.title}</h5>
                         <p className="card-text">Director: {item.director}</p>
+                        <p className="card-text">Release date: {item.release_date}</p>
                         <div>
                             <Link to={`/film/${index+1}`} className="btn btn-outline-dark me-3">Learn more!</Link>
                             <button className="btn btn-outline-warning" to="#" ><i className="fa-regular fa-heart" onClick={()=>{

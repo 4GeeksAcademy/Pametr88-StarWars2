@@ -32,8 +32,11 @@ export const DetallePlanet = (props) => {
                     <div className="card-body">
                         <h5 className="card-title">{store.OnePlanet.properties?.name}</h5>
                         <p className="card-text">Diameter: {store.OnePlanet.properties?.diameter}</p>
+                        <p className="card-text">Population: {store.OnePlanet.properties?.population}</p>
                         <p className="card-text">Gravity: {store.OnePlanet.properties?.gravity}</p>
+                        <p className="card-text">Terrain: {store.OnePlanet.properties?.terrain}</p>
                         <p className="card-text">Climate: {store.OnePlanet.properties?.climate}</p>
+                        <p className="card-text">Rotation period: {store.OnePlanet.properties?.rotation_period}</p>
                     </div>
                 </div>
             </div>

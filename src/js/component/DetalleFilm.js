@@ -26,9 +26,11 @@ export const DetalleFilm = (props) => {
                     </div>    
                     <div className="card-body">
                         <h5 className="card-title">{store.OneFilm.properties?.title}</h5>
+                        <p className="card-text">Director: {store.OneFilm.properties?.director}</p>
+                        <p className="card-text">Producer: {store.OneFilm.properties?.producer}</p>
                         <p className="card-text">Created: {store.OneFilm.properties?.created}</p>
                         <p className="card-text">Edited: {store.OneFilm.properties?.edited}</p>
-                        <p className="card-text">Producer: {store.OneFilm.properties?.producer}</p>
+                        <p className="card-text">Release date: {store.OneFilm.properties?.release_date}</p>
                     </div>       
                 </div>            
             </div>
