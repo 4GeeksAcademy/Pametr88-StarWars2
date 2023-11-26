@@ -18,7 +18,7 @@ export const Species = () => {
                         <h5 className="card-title">{item.name}</h5>
                         <p className="card-text">Classification: {item.classification}</p>
                         <div>
-                            <Link to="#" className="btn btn-outline-dark me-3">Learn more!</Link>
+                            <Link to={`/specie/${index+1}`} className="btn btn-outline-dark me-3">Learn more!</Link>
                             <button className="btn btn-outline-warning" to="#" ><i className="fa-regular fa-heart" onClick={()=>{
                                 actions.addFavorite(item.name)
                             }} style={{ color: "#ffff00" }}></i></button>

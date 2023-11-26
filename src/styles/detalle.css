@@ -1,0 +1,14 @@
+.carta {
+    width: 18rem;
+    padding-left: 10px;
+    margin-left: 150px;
+}
+.detail{
+    align-items: center;
+    background-color: whitesmoke !important;
+}
+.descript{
+    align-items: center;
+    text-align: center;
+    padding-top: 105px;
+}

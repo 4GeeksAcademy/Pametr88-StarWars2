@@ -19,6 +19,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 			OnePlanet: {
 
 			},
+			OneFilm: {
+
+			},
+			OneSpecie: {
+
+			},
 			favorites: [
 
 			],
@@ -87,6 +93,16 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 					.catch(err => console.error(err))
 			},
+			loadOneFilm: (id) => {
+
+				fetch(`https://www.swapi.tech/api/films/${id}`)
+					.then(res => res.json())
+					.then(data => {
+						const store = getStore()
+						setStore({ ...store, OneFilm: data.result })
+					})
+					.catch(err => console.error(err))
+			},
 			loadSomeSpecie: () => {
 
 				fetch("https://swapi.dev/api/species")
@@ -94,6 +110,16 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.then(data => {
 						const store = getStore()
 						setStore({ ...store, Especies: data.results })
+					})
+					.catch(err => console.error(err))
+			},
+			loadOneSpecie: (id) => {
+
+				fetch(`https://www.swapi.tech/api/species/${id}`)
+					.then(res => res.json())
+					.then(data => {
+						const store = getStore()
+						setStore({ ...store, OneSpecie: data.result })
 					})
 					.catch(err => console.error(err))
 			},

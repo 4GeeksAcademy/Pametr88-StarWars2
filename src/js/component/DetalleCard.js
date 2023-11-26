@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { Context } from "../store/appContext";
 import { Link, useParams } from "react-router-dom";
+import "../../styles/detalle.css";
 
 export const DetalleCard = (props) => {
     const { store, actions } = useContext(Context)
@@ -12,7 +13,7 @@ export const DetalleCard = (props) => {
     return (
         <div className="detail">
             <div className="card-container">
-                <div className="card" style={{ width: "50rem" }}>
+                <div className="card carta" style={{ width: "45rem" }}>
                     <div className="row">
                         <div className="col-7">
                         <img src={`https://starwars-visualguide.com/assets/img/characters/${params.id}.jpg`} className="card-img-top" alt="..." />

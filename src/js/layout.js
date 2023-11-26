@@ -4,7 +4,9 @@ import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
-import {VPlanet} from "./views/vPlanet"
+import { VPlanet } from "./views/vPlanet";
+import { VFilm } from "./views/vFilm";
+import { VSpecie } from "./views/vSpecie";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
@@ -26,6 +28,8 @@ const Layout = () => {
 						<Route path="/" element={<Home />} />
 						<Route path="/character/:id" element={<Demo />} />
 						<Route path="/planet/:id" element={<VPlanet />} />
+						<Route path="/film/:id" element={<VFilm />} />
+						<Route path="/specie/:id" element={<VSpecie />} />
 						<Route path="/single/:theid" element={<Single />} />
 						<Route path="*" element={<h1>Not found!</h1>} />
 					</Routes>
